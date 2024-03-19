@@ -13,9 +13,7 @@ const treeRoutes = require("./routes/treeRoutes")
 
 // Middleware for parsing JSON bodies
 app.use(express.json());
-app.use(cors({
-    origin: "https://backend-3-b1tz.onrender.com/"
-}))
+app.use(cors())
 // Define routes for CRUD operations
 app.use("/api", treeRoutes)
 
